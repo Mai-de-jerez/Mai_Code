@@ -160,7 +160,8 @@ footer a:hover {
     img {
         margin-left: 15px;
         margin-right: 15px;
-        width: 100%;  /* Aseguramos que las imágenes se ajusten al tamaño disponible */
+        width: 100%;/* Aseguramos que las imágenes se ajusten al tamaño disponible */
+        box-sizing: border-box;
         height: auto;
     }
 }
