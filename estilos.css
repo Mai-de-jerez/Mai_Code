@@ -148,6 +148,12 @@ footer a:hover {
         padding: 10px;
     }
 
+    audio {
+        max-width: calc(100% - 30px); /* Mantén los márgenes de 15px a cada lado */
+        margin: 0 auto; /* Centra el audio */
+        height: auto; /* Mantiene las proporciones */
+    }
+
     /* Imágenes con márgenes */
     img, video {
         display: block; /* Asegura que no haya espacios extra alrededor */
