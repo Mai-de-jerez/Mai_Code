@@ -122,94 +122,46 @@ footer a:hover {
     background-color: rgb(76, 12, 12); /* Fondo burdeos al pasar el mouse */
 }
 
-/* Estilos para pantallas pequeñas (móviles, tablets) */
 @media (max-width: 768px) {
-    /* Ajuste de tamaño de fuente con unidades relativas */
-body {
-        font-size: 0.875rem; /* Equivalente a 14px si la raíz es 16px */
-        margin: 0; /* Elimina márgenes globales innecesarios */
-        padding: 0; /* Elimina padding innecesario */
+    /* Ajustar márgenes y hacerlos más fluidos en dispositivos pequeños */
+    body, h1, h2, h3, h4, h5, h6, p, ul, ol, img, table, footer {
+        margin-left: 15px;  /* Reducir márgenes para adaptarlos a pantallas pequeñas */
+        margin-right: 15px;
     }
 
-    /* Aplicar márgenes pequeños y consistentes para los encabezados */
-h1, h2, h3, h4, h5, h6 {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+    /* Los márgenes específicos para el video */
+    video {
+        margin-left: 15px;
+        margin-right: 15px; /* Añadir margen derecho para los videos */
+        width: 100%;  /* Aseguramos que el video se ajuste al ancho disponible */
+        height: auto; /* Ajustamos la altura proporcionalmente */
     }
 
-p {
-        margin: 0.5rem 0;
+    /* Alineación coherente del texto con los títulos */
+    h1, h2, h3, h4, h5, h6, p, ul, ol, img {
+        margin-left: 15px;  /* Alineamos todos los elementos */
+        margin-right: 15px;
     }
 
-    /* Optimización de las imágenes */
-img {
-        max-width: 100%; /* Asegura que las imágenes sean flexibles */
-        height: auto;    /* Mantiene la proporción */
-        display: block;  /* Elimina espacios en línea extra */
-        margin: 0 auto;  /* Centra imágenes si es necesario */
+    /* Los enlaces del mapa del marque */
+    nav ul li a {
+        padding: 15px 20px; /* Aumentamos el área de clic */
+        width: 100%; /* Asegura que el enlace ocupe el 100% del ancho disponible */
     }
 
-    /* Menú de navegación optimizado */
-nav ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none; /* Elimina los puntos de lista */
-        display: flex; /* Usa flexbox para alinear los elementos */
-        flex-direction: column; /* Los elementos en columna */
-        align-items: center; /* Centrado horizontal de los elementos */
-        flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+    /* Footer con fondo consistente */
+    footer {
+        background-color: rgb(234, 221, 156); /* Igual al color del fondo de la página */
+        color: rgb(76, 12, 12);  /* Aseguramos que el texto sea legible */
+        padding: 10px;
     }
 
-nav ul li {
-        width: 100%; /* Hace que los enlaces ocupen todo el ancho */
-        margin: 8px 0; /* Espaciado más eficiente */
+    /* Imágenes con márgenes */
+    img {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 100%;  /* Aseguramos que las imágenes se ajusten al tamaño disponible */
+        height: auto;
     }
-
-nav ul li a {
-        padding: 12px; /* Aumenta el área de clic */
-        width: 100%; /* Asegura que los enlaces ocupen el 100% del ancho */
-        text-align: center; /* Centra el texto en los enlaces */
-        display: block; /* Hace que el enlace sea bloque completo */
-        min-height: 40px; /* Aumenta el área táctil */
-    }
-
-ul, ol {
-    margin: 1rem 0; /* Espaciado más consistente */
-    padding-left: 1.5rem; /* Mayor separación para el texto */
-    font-size: 0.875rem; /* 14px, pero usando rem */
-    line-height: 1.5; /* Mejor interlineado para mayor legibilidad */
 }
 
-/* Videos adaptativos */
-video {
-    width: 100%;
-    height: auto;
-    max-width: 100%; /* Asegura que no se desborde del contenedor */
-}
-
-/* Si los videos están embebidos en iframes */
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Proporción 16:9 */
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-/* Optimización del footer */
-footer {
-    font-size: 0.875rem; /* 14px usando rem */
-    padding: 1rem; /* Un poco más de espacio */
-    text-align: center; /* Centra el contenido */
-    margin: 0 auto; /* Centra el pie de página */
-    background-color: #f1f1f1; /* Un fondo claro para mejorar la visibilidad */
-}
-}
