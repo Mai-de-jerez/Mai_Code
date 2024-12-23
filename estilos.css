@@ -155,5 +155,11 @@ footer a:hover {
         margin: 0 auto; /* Centra las imágenes horizontalmente */
         height: auto; /* Mantiene proporciones */
     }
+
+    audio {
+        width: 100%; /* Asegura que el reproductor de audio ocupe todo el ancho disponible */
+        max-width: calc(100% - 30px); /* Aplicamos la misma lógica de margen */
+        height: auto; /* Mantiene el alto en proporción (aunque no tiene mucho impacto en audio) */
+    }
 }
 
