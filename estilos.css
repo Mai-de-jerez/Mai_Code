@@ -129,14 +129,6 @@ footer a:hover {
         margin-right: 15px;
     }
 
-    /* Los márgenes específicos para el video */
-    video {
-        margin-left: 15px;
-        margin-right: 15px; /* Añadir margen derecho para los videos */
-        width: 100%;  /* Aseguramos que el video se ajuste al ancho disponible */
-        height: auto; /* Ajustamos la altura proporcionalmente */
-    }
-
     /* Alineación coherente del texto con los títulos */
     h1, h2, h3, h4, h5, h6, p, ul, ol, img {
         margin-left: 15px;  /* Alineamos todos los elementos */
@@ -157,7 +149,7 @@ footer a:hover {
     }
 
     /* Imágenes con márgenes */
-    img {
+    img, video {
         display: block; /* Asegura que no haya espacios extra alrededor */
         max-width: calc(100% - 30px); /* Tamaño máximo con márgenes laterales de 15px */
         margin: 0 auto; /* Centra las imágenes horizontalmente */
