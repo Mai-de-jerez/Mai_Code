@@ -125,7 +125,7 @@ footer a:hover {
 /* Estilo para dispositivos móviles */
 @media (max-width: 768px) {
     /* Respetar los márgenes de 5px para todos los elementos */
-    body, h1, h2, h3, h4, h5, h6, p, img, video, audio, footer, nav ul li, table {
+    body, h1, h2, h3, h4, h5, h6, p, img, video, audio, footer, nav ul li, table, ul, ol {
         margin-left: 5px;
         margin-right: 5px;
         padding-left: 5px;
@@ -172,10 +172,12 @@ footer a:hover {
         max-width: 100%; /* Asegura que la imagen del mapa se ajuste correctamente */
         height: auto; /* Mantiene las proporciones */
     }
+  
 
     map area {
         cursor: pointer; /* Asegura que las áreas del mapa se reconozcan como clicables */
         display: inline-block; /* Garantiza que las áreas sean clicables */
+        position: relative;
     }
 
     /* Asegura que los enlaces dentro del footer, los títulos y otros elementos respeten los márgenes */
