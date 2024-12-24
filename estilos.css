@@ -1,8 +1,10 @@
 /* Estilo para el cuerpo de la página */
 body {
     background-color: rgb(234, 221, 156); /* Fondo malva */
-    color: rgb(76, 12, 12); /* Color de texto blanco */
+    color: rgb(76, 12, 12); /* Color de texto */
     font-family: Arial, sans-serif; /* Fuente legible */
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -11,114 +13,168 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: rgb(76, 12, 12); 
+    color: rgb(76, 12, 12);
     text-decoration: underline;
     font-weight: bold;
 }
 
 img {
-    margin-left: 55px; /* Aplica un margen a la izquierda de 55px */
-    margin-right: 0; /* No aplica margen a la derecha */
-    display: block; /* Asegura que las imágenes se ubiquen en su propia línea */
-    margin-bottom: 20px; /* Espacio opcional entre las imágenes */
+    margin: 10px auto; /* Centra las imágenes automáticamente */
+    max-width: 100%; /* Se ajusta al ancho del contenedor */
+    height: auto; /* Mantiene proporción */
+    display: block;
+    margin-bottom: 20px; /* Espacio opcional entre imágenes */
+}
+
+video, audio {
+    margin: 10px auto;
+    max-width: 100%; /* Se ajusta al ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para videos */
+    display: block; /* Centra los elementos en su propia línea */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 1rem; /* Ajusta el tamaño de fuente en tablas */
 }
+
 table, th, td {
-    border: 1px solid black; /* Define un borde de 1px sólido y de color negro */
+    border: 1px solid black;
 }
 
 th, td {
     padding: 8px;
-    text-align: center; /* Centra el texto en las celdas */
+    text-align: center;
 }
 
-/* Estilo general para las listas (ordenadas y no ordenadas) */
+/* Estilo general para listas (ordenadas y no ordenadas) */
 ul, ol {
-    margin-left: 55px; /* Añade margen izquierdo a la lista */
-    margin-right: 55px; /* Añade margen derecho a la lista */
-    padding-left: 20px; /* Ajusta el padding izquierdo para la lista */
-    line-height: 1.2; /* Mejora el espaciado entre las líneas */
-    font-size: 15px; /* Aumenta el tamaño de la fuente */
+    margin-left: 55px;
+    margin-right: 55px;
+    padding-left: 20px;
+    line-height: 1.2;
+    font-size: 1rem;
 }
 
-/* Estilo para los elementos de la lista */
 ul li, ol li {
-    margin-bottom: 15px; /* Añade margen inferior para separar los elementos de la lista */
+    margin-bottom: 15px;
     margin-top: 15px;
 }
 
-/* Estilo para las listas dentro de la navegación */
 nav {
-    margin: 20px 0; /* Espaciado entre el menú de navegación y el contenido */
+    margin: 20px 0;
 }
 
 nav ul {
-    list-style-type: none; /* Elimina los puntos de la lista */
+    list-style-type: none;
     padding: 0;
-    text-align: center; /* Alinea los elementos de la lista al centro */
+    text-align: center;
 }
 
 nav ul li {
-    display: inline-block; /* Asegura que cada elemento de la lista ocupe su propio espacio en la línea */
-    margin-right: 20px; /* Añade espaciado entre los elementos de la lista */
-    margin-bottom: 10px; /* Añade margen inferior si hay más de una línea de elementos */
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 nav ul li a {
-    color: rgb(76, 12, 12) ; /* Color burdeos */
-    text-decoration: none; /* Sin subrayado */
+    color: rgb(76, 12, 12);
+    text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px; /* Añade espacio dentro del enlace */
-    border: 2px solid rgb(76, 12, 12); /* Borde alrededor del enlace */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #f9f9f9; /* Fondo claro para el recuadro */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Efecto de transición */
-    display: block; /* Asegura que el enlace ocupe toda la línea dentro de su contenedor */
-    min-width: 120px; /* Define un ancho mínimo para cada enlace */
-    text-align: center; /* Centra el texto dentro del enlace */
-    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el tamaño total */
+    padding: 10px 20px;
+    border: 2px solid rgb(76, 12, 12);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+    min-width: 120px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 nav ul li a:hover {
-    background-color: rgb(76, 12, 12); /* Fondo violeta oscuro al pasar el mouse */
-    color: white; /* Texto blanco al pasar el mouse */
-}
-
-
-video {
-    margin-left: 55px;
-    width: 600px;
-    height: 400px;
-}
-
-audio {
-    margin-left: 55px;
+    background-color: rgb(76, 12, 12);
+    color: white;
 }
 
 footer {
-    margin-top: 20px; /* Espacio superior */
-    margin-bottom: 20px; /* Espacio inferior opcional */
-    margin-left: 55px;
-    margin-right: 55px;
-    text-align: center; /* Justifica el texto para una apariencia uniforme */
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
 }
 
 footer p, footer ul, footer ol, footer h1, footer h2, footer h3 {
-    margin: 0; /* Elimina márgenes adicionales dentro del footer */
-    padding: 0; /* Elimina padding adicional */
+    margin: 0;
+    padding: 0;
 }
 
 footer a {
-    color: blue; /* Color burdeos */
-    text-decoration: underline; /* Elimina subrayado */
+    color: blue;
+    text-decoration: underline;
 }
 
 footer a:hover {
-    color: white; /* Texto blanco al pasar el mouse */
-    background-color: rgb(76, 12, 12); /* Fondo burdeos al pasar el mouse */
+    color: white;
+    background-color: rgb(76, 12, 12);
 }
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    /* Ajustes de márgenes y fuentes */
+    h1, h2, h3, h4, h5, h6, p, ul, ol {
+        margin: 10px;
+        font-size: 1rem; /* Disminuye el tamaño de la fuente */
+    }
+
+    /* Imágenes y videos responsivos */
+    img, video, audio {
+        margin: 10px auto;
+        max-width: 100%; /* Asegura que no sobrepasen el ancho de la pantalla */
+        height: auto; /* Mantiene proporciones */
+    }
+
+    /* Encabezados y párrafos */
+    h1 {
+        font-size: 1.8rem; /* Tamaño más pequeño para dispositivos móviles */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem; /* Fuente más pequeña y legible */
+    }
+
+    /* Menú responsivo */
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Los enlaces se apilan verticalmente */
+        align-items: center; /* Centra los enlaces */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce el espacio entre los enlaces */
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Tablas adaptativas */
+    table {
+        font-size: 0.9rem;
+        overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+    }
+}
+
+
+
+
 
