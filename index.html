@@ -165,6 +165,45 @@
     <area shape="circle" coords="100, 200, 20" href="https://www.flickr.com/photos/8230500@N04/1459755002" alt="Puente sobre el lago." aria-label="Ver imagen del puente sobre el lago" target="_blank">
     <area shape="poly" coords="318, 251, 346, 251, 336, 222" href="https://www.escapalandia.com/el-parque-juan-carlos-i-de-madrid-con-ninos/" alt="Tirolina" aria-label="Ver más sobre la tirolina" target="_blank">
 </map>
+    <script>
+        // Dimensiones originales
+        const originalSizes = {
+            width: 500,
+            height: 410
+        };
+
+        const mobileSizes = {
+            width: 400,
+            height: 328
+        };
+
+        const mapElement = document.getElementById('map');
+        const areas = document.querySelectorAll('area');
+
+        function adjustMapAreas() {
+            const currentWidth = mapElement.offsetWidth;
+            const scaleFactor = currentWidth / originalSizes.width;
+
+            areas.forEach(area => {
+                const originalCoords = area.getAttribute('data-original-coords').split(',').map(Number);
+                const adjustedCoords = originalCoords.map(coord => coord * scaleFactor);
+                area.setAttribute('coords', adjustedCoords.join(','));
+            });
+        }
+
+        // Guardar las coordenadas originales
+        window.addEventListener('load', () => {
+            areas.forEach(area => {
+                if (!area.hasAttribute('data-original-coords')) {
+                    area.setAttribute('data-original-coords', area.getAttribute('coords'));
+                }
+            });
+            adjustMapAreas();
+        });
+
+        // Ajustar las áreas al redimensionar
+        window.addEventListener('resize', adjustMapAreas);
+    </script>
 
 <p>Si pinchas sobre los puntos 4,5 o 6 de este mapa podrás ir a una página donde ver los jardines de las 3 culturas.</p>
 <p>Si pinchas sobre el punto 8 podrás visualizar la tirolina.</p>
