@@ -99,6 +99,11 @@ audio {
     margin-left: 55px;
 }
 
+#mapa-parque {
+    width: 500px;
+    height: 410px;
+}
+
 footer {
     margin-top: 20px; /* Espacio superior */
     margin-bottom: 20px; /* Espacio inferior opcional */
@@ -139,6 +144,11 @@ footer a:hover {
     li, ul, ol{
         margin-left: 10px;
         margin-right: 5px;
+    }
+
+    #mapa-parque{
+        width: 400px;
+        height: 328px;
     }
 
     /* Ajustar imágenes para que no sean tan grandes */
