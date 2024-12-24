@@ -99,6 +99,24 @@ audio {
     margin-left: 55px;
 }
 
+.map-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 82%; /* Relación de aspecto de la imagen */
+}
+
+.map-container img {
+    width: 100%;  /* La imagen ocupa todo el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina cualquier espacio debajo de la imagen */
+}
+
+/* Hacer las áreas del mapa adaptables */
+area {
+    outline: none; /* Elimina el borde por defecto de las áreas */
+}
+
 footer {
     margin-top: 20px; /* Espacio superior */
     margin-bottom: 20px; /* Espacio inferior opcional */
@@ -139,6 +157,15 @@ footer a:hover {
     li, ul, ol{
         margin-left: 10px;
         margin-right: 5px;
+    }
+
+    .map-container {
+        padding-bottom: 82%; /* Relación de aspecto */
+    }
+
+    .map-container img {
+        width: 100%;  /* Se adapta al ancho de la pantalla */
+        height: auto; /* Mantiene la proporción */
     }
 
     /* Ajustar imágenes para que no sean tan grandes */
