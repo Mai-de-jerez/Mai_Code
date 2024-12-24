@@ -123,12 +123,19 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    body, h1, h2, h3, h4, h5, h6, p, nav ul li, img, video, audio, footer, table{
+    body, h1, h2, h3, h4, h5, h6, p, nav ul li{
         margin-left: 5px;
         margin-right: 5px;
         padding-left: 5px;
         padding-right: 5px;
     }
+    img, video, audio, footer{
+         margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+        
     li, ul, ol{
         margin-left: 10px;
         margin-right: 5px;
