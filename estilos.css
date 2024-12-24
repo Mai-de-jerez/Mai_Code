@@ -8,29 +8,30 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin-left: 55px; /* Margen en el lado izquierdo */
-    margin-right: 55px; /* Margen en el lado derecho */
-}
-
-h1, h2, h3, h4, h5, h6 {
+    margin: 10px auto; /* Centra y aplica márgenes iguales a los de las imágenes */
+    max-width: calc(100% - 10px); /* Asegura que no excedan el ancho del contenedor con márgenes */
+    font-size: 1rem; /* Ajusta el tamaño del texto para que sea legible */
     color: rgb(76, 12, 12);
     text-decoration: underline;
     font-weight: bold;
 }
 
 img {
-    margin: 10px auto; /* Centra las imágenes automáticamente */
-    max-width: 100%; /* Se ajusta al ancho del contenedor */
+    margin: 5px auto; /* Centra las imágenes automáticamente */
+    max-width: calc(100% - 10px); /* Deja un margen de 5px a cada lado */
     height: auto; /* Mantiene proporción */
     display: block;
     margin-bottom: 20px; /* Espacio opcional entre imágenes */
 }
 
 video, audio {
-    margin: 10px auto;
-    max-width: 100%; /* Se ajusta al ancho del contenedor */
-    height: auto; /* Ajusta la altura automáticamente para videos */
-    display: block; /* Centra los elementos en su propia línea */
+    display: block;
+    width: calc(100% - 10px); /* Deja un margen de 5px en cada lado */
+    height: auto; /* Ajusta automáticamente la altura para videos */
+    margin: 5px auto; /* Centra y deja márgenes */
+    background-color: #f9f9f9; /* Fondo claro para el reproductor */
+    border: 1px solid #ccc; /* Borde visible */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 table {
@@ -50,8 +51,7 @@ th, td {
 
 /* Estilo general para listas (ordenadas y no ordenadas) */
 ul, ol {
-    margin-left: 55px;
-    margin-right: 55px;
+    margin: 10px auto;
     padding-left: 20px;
     line-height: 1.2;
     font-size: 1rem;
@@ -127,14 +127,11 @@ footer a:hover {
     }
 
     h1, h2, h3, h4, h5, h6, p {
-        margin-left: 5px;
-        margin-right: 5px;
         font-size: 14px; /* Tamaño de letra más pequeño */
     }
 
     img, video, map {
-        display: block;
-        width: calc(100% - 10px); /* Deja un margen de 5px en cada lado */
+        width: calc(100% - 10px); /* Deja un margen de 5px a cada lado */
         max-width: 90%; /* Limita el tamaño máximo al 90% del contenedor */
         margin: 5px auto; /* Margen superior/inferior y centrado */
     }
@@ -159,16 +156,17 @@ footer a:hover {
 
 /* Solución para mapas de imagen */
 img[usemap] {
-    max-width: 100%; /* Asegura que el mapa se ajuste a la imagen */
-    height: auto; /* Mantiene las proporciones */
+    max-width: calc(100% - 10px); /* Deja un margen de 5px a los lados */
+    height: auto; /* Mantiene proporción */
+    display: block; /* Centra y asegura que la imagen esté en su línea */
+    margin: 5px auto; /* Centra la imagen con margen */
 }
 
 map area {
-    cursor: pointer; /* Asegura que se reconozcan como enlaces */
-    display: inline-block; /* Garantiza que los enlaces sean clicables */
+    cursor: pointer; /* Asegura que los enlaces sean clicables */
+    display: block; /* Garantiza su visibilidad */
+    outline: none; /* Elimina bordes al hacer clic */
 }
-
-
 
 
 
