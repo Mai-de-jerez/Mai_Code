@@ -99,27 +99,6 @@ audio {
     margin-left: 55px;
 }
 
-.map-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* Relación de aspecto (por ejemplo, 16:9, ajusta según sea necesario) */
-    overflow: hidden;
-}
-
-.map-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Mantiene la proporción y no distorsiona la imagen */
-}
-
-area {
-    outline: none;
-}
-
 footer {
     margin-top: 20px; /* Espacio superior */
     margin-bottom: 20px; /* Espacio inferior opcional */
@@ -182,19 +161,6 @@ footer a:hover {
         margin-bottom: 10px; /* Añade un margen inferior */
     }
 
-    .map-container {
-        padding-bottom: 75%; /* O ajusta este valor según la proporción de tu imagen en móviles */
-    }
-
-    .map-container img {
-        width: 100%;
-        height: auto; /* Mantiene la proporción de la imagen */
-    }
-
-    area {
-        outline: none;
-    }
-}
 
     /* Ajustar la tabla (si es necesario) */
     table {
@@ -211,21 +177,6 @@ footer a:hover {
         text-align: center;
     }
   
-
-    .map-container {
-        padding-bottom: 82%; /* Asegura la proporción correcta en pantallas pequeñas */
-    }
-
-    .map-container img {
-        width: 100%;
-        height: auto;
-    }
-
-    area {
-    outline: none; /* Remover el borde de las áreas */
-}
-
-   
     footer {
         margin-top: 10px;
         margin-bottom: 10px;
