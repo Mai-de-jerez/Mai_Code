@@ -22,3 +22,4 @@ function updateAreaCoords() {
 
 window.addEventListener('resize', updateAreaCoords);
 window.addEventListener('load', updateAreaCoords);
+
