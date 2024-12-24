@@ -167,18 +167,25 @@ footer a:hover {
         text-align: center;
     }
 
-    /* Hacer que los enlaces dentro del mapa de imagen sean funcionales */
-    img[usemap] {
-        max-width: 100%; /* Asegura que la imagen del mapa se ajuste correctamente */
-        height: auto; /* Mantiene las proporciones */
+    .map-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 82%; /* Relación de aspecto de la imagen */
     }
-  
 
-    map area {
-        cursor: pointer; /* Asegura que las áreas del mapa se reconozcan como clicables */
-        display: inline-block; /* Garantiza que las áreas sean clicables */
-        position: relative;
+    .map-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     }
+
+/* Mejorar la adaptabilidad de las áreas del mapa */
+area {
+    outline: none; /* Remover el borde de las áreas */
+}
 
     /* Asegura que los enlaces dentro del footer, los títulos y otros elementos respeten los márgenes */
     footer {
