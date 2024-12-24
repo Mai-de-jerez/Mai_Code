@@ -119,59 +119,53 @@ footer a:hover {
     background-color: rgb(76, 12, 12);
 }
 
-/* Media Queries para dispositivos móviles */
-@media screen and (max-width: 768px) {
-    /* Ajustes de márgenes y fuentes */
-    h1, h2, h3, h4, h5, h6, p, ul, ol {
-        margin: 10px;
-        font-size: 1rem; /* Disminuye el tamaño de la fuente */
+/* Estilo general para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
     }
 
-    /* Imágenes y videos responsivos */
-    img, video, audio {
-        margin: 10px auto;
-        max-width: 100%; /* Asegura que no sobrepasen el ancho de la pantalla */
-        height: auto; /* Mantiene proporciones */
+    h1, h2, h3, h4, h5, h6, p {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 14px; /* Tamaño de letra más pequeño */
     }
 
-    /* Encabezados y párrafos */
-    h1 {
-        font-size: 1.8rem; /* Tamaño más pequeño para dispositivos móviles */
+    img, video, map {
+        display: block;
+        width: calc(100% - 10px); /* Deja un margen de 5px en cada lado */
+        max-width: 90%; /* Limita el tamaño máximo al 90% del contenedor */
+        margin: 5px auto; /* Margen superior/inferior y centrado */
     }
 
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    p {
-        font-size: 1rem; /* Fuente más pequeña y legible */
-    }
-
-    /* Menú responsivo */
-    nav ul {
-        display: flex;
-        flex-direction: column; /* Los enlaces se apilan verticalmente */
-        align-items: center; /* Centra los enlaces */
+    audio {
+        display: block;
+        width: calc(100% - 10px); /* Deja un margen de 5px en cada lado */
+        margin: 5px auto; /* Centra y deja un margen */
     }
 
     nav ul li {
-        margin: 5px 0; /* Reduce el espacio entre los enlaces */
+        display: block;
+        margin: 10px 0; /* Separa los elementos */
+        text-align: center;
     }
 
     nav ul li a {
-        font-size: 1rem;
-        padding: 10px;
+        padding: 8px 16px;
+        font-size: 14px;
     }
+}
 
-    /* Tablas adaptativas */
-    table {
-        font-size: 0.9rem;
-        overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
-    }
+/* Solución para mapas de imagen */
+img[usemap] {
+    max-width: 100%; /* Asegura que el mapa se ajuste a la imagen */
+    height: auto; /* Mantiene las proporciones */
+}
+
+map area {
+    cursor: pointer; /* Asegura que se reconozcan como enlaces */
+    display: inline-block; /* Garantiza que los enlaces sean clicables */
 }
 
 
