@@ -175,28 +175,22 @@ footer a:hover {
         padding: 8px;
         text-align: center;
     }
+  
 
     .map-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 82%; /* Relación de aspecto de la imagen */
+        padding-bottom: 82%; /* Asegura la proporción correcta en pantallas pequeñas */
     }
 
     .map-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+        width: 100%;
+        height: auto;
     }
 
-/* Mejorar la adaptabilidad de las áreas del mapa */
-area {
+    area {
     outline: none; /* Remover el borde de las áreas */
 }
 
-    /* Asegura que los enlaces dentro del footer, los títulos y otros elementos respeten los márgenes */
+   
     footer {
         margin-top: 10px;
         margin-bottom: 10px;
