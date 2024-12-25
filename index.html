@@ -157,52 +157,65 @@
     <br>
     
 <h4>MAPA DEL PARQUE</h4>
-<img src="mapaparque.png" alt="mapa del parque" usemap="#mapa_parque" class="solomapa" width="500" height="410" >
+<img id= map src="mapaparque.png" alt="mapa del parque" usemap="#mapa_parque" class="solomapa" width="500" height="410" >
 <map name="mapa_parque">
     <area shape="rect" coords="221, 94, 284, 139" href="https://www.unaventanadesdemadrid.com/jardin-de-las-tres-culturas.html" alt="Jardines de las 3 culturas" aria-label="Ver más sobre los jardines de las 3 culturas" target="_blank">
     <area shape="circle" coords="100, 200, 20" href="https://www.flickr.com/photos/8230500@N04/1459755002" alt="Puente sobre el lago." aria-label="Ver imagen del puente sobre el lago" target="_blank">
     <area shape="poly" coords="318, 251, 346, 251, 336, 222" href="https://www.escapalandia.com/el-parque-juan-carlos-i-de-madrid-con-ninos/" alt="Tirolina" aria-label="Ver más sobre la tirolina" target="_blank">
 </map>
-    <script>
-        // Dimensiones originales
-        const originalSizes = {
-            width: 500,
-            height: 410
-        };
+<script>
+    // Dimensiones originales (versión escritorio)
+    const originalSizes = {
+        width: 500,
+        height: 410
+    };
 
-        const mobileSizes = {
-            width: 400,
-            height: 328
-        };
+    // Dimensiones para móvil (opcional, solo para referencia)
+    const mobileSizes = {
+        width: 400,
+        height: 328
+    };
 
-        const mapElement = document.getElementById('map');
-        const areas = document.querySelectorAll('area');
+    // Elementos relevantes
+    const mapElement = document.getElementById('map'); // Imagen
+    const areas = document.querySelectorAll('area'); // Áreas del mapa
 
-        function adjustMapAreas() {
-            const currentWidth = mapElement.offsetWidth;
-            const scaleFactor = currentWidth / originalSizes.width;
+    // Función para ajustar las coordenadas según el tamaño actual de la imagen
+    function adjustMapAreas() {
+        // Obtener el ancho actual de la imagen
+        const currentWidth = mapElement.offsetWidth;
 
-            areas.forEach(area => {
-                const originalCoords = area.getAttribute('data-original-coords').split(',').map(Number);
-                const adjustedCoords = originalCoords.map(coord => coord * scaleFactor);
-                area.setAttribute('coords', adjustedCoords.join(','));
-            });
-        }
+        // Calcular el factor de escala
+        const scaleFactor = currentWidth / originalSizes.width;
 
-        // Guardar las coordenadas originales
-        window.addEventListener('load', () => {
-            areas.forEach(area => {
-                if (!area.hasAttribute('data-original-coords')) {
-                    area.setAttribute('data-original-coords', area.getAttribute('coords'));
-                }
-            });
-            adjustMapAreas();
+        // Ajustar cada área
+        areas.forEach(area => {
+            // Recuperar las coordenadas originales
+            const originalCoords = area.getAttribute('data-original-coords').split(',').map(Number);
+
+            // Reescalar las coordenadas
+            const adjustedCoords = originalCoords.map(coord => coord * scaleFactor);
+
+            // Aplicar las nuevas coordenadas
+            area.setAttribute('coords', adjustedCoords.join(','));
+        });
+    }
+
+    // Guardar las coordenadas originales al cargar la página
+    window.addEventListener('load', () => {
+        areas.forEach(area => {
+            if (!area.hasAttribute('data-original-coords')) {
+                area.setAttribute('data-original-coords', area.getAttribute('coords'));
+            }
         });
 
-        // Ajustar las áreas al redimensionar
-        window.addEventListener('resize', adjustMapAreas);
-    </script>
+        // Ajustar las coordenadas según el tamaño inicial
+        adjustMapAreas();
+    });
 
+    // Reajustar las áreas al cambiar el tamaño de la ventana
+    window.addEventListener('resize', adjustMapAreas);
+</script>
 <p>Si pinchas sobre los puntos 4,5 o 6 de este mapa podrás ir a una página donde ver los jardines de las 3 culturas.</p>
 <p>Si pinchas sobre el punto 8 podrás visualizar la tirolina.</p>
 <p>Si pinchas sobre el punto 1 podrás ver el puente arco acero corten.</p><br>
