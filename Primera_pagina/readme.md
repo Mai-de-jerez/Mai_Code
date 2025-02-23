@@ -1,1 +1,0 @@
-Esta es mi primera página web, es básica sencilla, tiene un video, un audio, un mapa de imagen, varias imágenes, y están definidos los estilos para el fondo, los títulos, los párrafos, ect, así como varias pautas de accesibilidad (etiquetas aria, alt, etc). Tiene optimizadas las imágenes y los videos y sigue las normas de accesibilidad pautadas por la w3c.
