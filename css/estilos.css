@@ -1,0 +1,417 @@
+#nav{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    line-height: 50px;
+    display: flex;/* Alinea los elementos en una fila */
+    padding: 0 20px; /* Agrega algo de espacio a los lados */
+    position: fixed;
+    top: 0; /* Asegura que esté en la parte superior */
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            transition: background-color 0.3s; /* Transición suave para cambios de color */
+        }
+
+#nav a{
+    color: #fff;/* Color del texto */
+    text-decoration: none;/* Quita el subrayado de los enlaces */
+    margin: 0 35px;/* Espacio entre los enlaces */
+    font-family: 'Pacifico', cursive; /* Fuente de Google Fonts */
+}
+
+#nav .logo {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    margin-right: 100px; /* Empuja los otros enlaces hacia la derecha */
+    font-family: 'Pacifico', cursive; /* Fuente de Google Fonts */
+}
+
+html, body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(138, 235, 138);
+}
+
+
+.portada{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0%;
+    margin: 0%;
+    font-size: 0.5rem; 
+    position: relative;
+}
+
+.portada h1 {
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+<<<<<<< HEAD
+    z-index: 2;
+}
+.portada .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Imagen por debajo del texto */
+}
+
+.bienvenida {
+    margin-top: -50px; /* Ajusta este valor según lo cerca que quieras el título */
+}
+
+
+.contenido {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 40px;
+    padding-top: 40px;
+=======
+}
+
+.contenido {
+    margin-left: 50px;
+    margin-right: 40px;
+    padding-top: 30px;
+>>>>>>> 13e2b31607b75da7797d30551d0395aee409845a
+    padding-bottom: 30px;
+    line-height: 30px;
+    height: auto;
+    background-color: rgb(138, 235, 138);
+    width: auto;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+.eventos h2 {
+   text-decoration: underline;
+   color: #aa350b;
+   margin: 20px;
+   padding: 10px;
+   margin-bottom: 0;
+   margin-top: 0;
+}
+
+.eventos h3 {
+    text-decoration: underline;
+}
+<<<<<<< HEAD
+
+=======
+>>>>>>> 13e2b31607b75da7797d30551d0395aee409845a
+.rutas ul{
+    margin-left: 60px;
+    padding: 15px;
+    }
+
+<<<<<<< HEAD
+/* Contenedor principal que engloba el formulario y la imagen */
+.contenedor-formulario {
+    display: flex;             /* Usamos Flexbox */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: flex-start;  /* Alineamos los elementos al principio (arriba) */
+    width: 100%;               /* Ocupar todo el ancho disponible */
+    gap: 20px;                 /* Espacio entre el formulario y la imagen */
+}
+
+/* Formulario */
+form {
+    width: 48%;                /* El formulario ocupa el 48% del ancho */
+    box-sizing: border-box;    /* Aseguramos que el padding no afecte el ancho */
+}
+
+/* Imagen */
+.imagen-formulario {
+    width: 48%;                /* La imagen ocupa el 48% del ancho */
+    box-sizing: border-box;  
+    margin-top: 20px;  /* Aseguramos que el padding no afecte el ancho */
+}
+
+/* Aseguramos que la imagen se ajuste bien dentro de su contenedor */
+.imagen-formulario img {
+    width: 100%;               /* La imagen ocupa el 100% del contenedor */
+    height: auto;              /* Mantiene la proporción de la imagen */
+}
+
+
+=======
+form {
+    width: 50%;
+    padding: 20px;
+    padding-top: 10px;
+    margin-left: 25px;
+}
+
+>>>>>>> 13e2b31607b75da7797d30551d0395aee409845a
+input, select {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 16px;
+<<<<<<< HEAD
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color=#000000)";/*IE 8*/
+    -moz-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);/*FF 3.5+*/
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color=#000000); /*IE 5.5-7*/
+=======
+    box-sizing: border-box;
+>>>>>>> 13e2b31607b75da7797d30551d0395aee409845a
+}
+
+button {
+    background-color: rgb(3, 52, 14);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+<<<<<<< HEAD
+
+=======
+>>>>>>> 13e2b31607b75da7797d30551d0395aee409845a
+button:hover {
+    background-color: rgb(23, 1, 46);
+}
+
+<<<<<<< HEAD
+=======
+.contenedor {
+    display: flex; /* Utiliza flexbox para alinear el formulario y la imagen */
+    justify-content: space-between; /* Espacia el contenido */
+    margin: 20px; /* Espacio alrededor del contenedor */
+}
+
+.imagen{
+    margin: 20px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+>>>>>>> 13e2b31607b75da7797d30551d0395aee409845a
+
+.galeria .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    gap: 35px;
+}
+
+.galeria img {
+    width: 250px; /* Tamaño fijo más pequeño */
+    height: 200px; /* Mantiene la proporción */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-color: #08310c;
+    border-width: 3px;
+    border-style: solid;
+}
+
+<<<<<<< HEAD
+.contenedor-noticias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Para que se adapten en pantallas pequeñas */
+    gap: 20px;
+}
+
+.noticia {
+    background-color: white;
+    color: black;
+    padding: 10px 40px 20px 40px; /* Ajustado para más espacio a los lados */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    width: 40%; /* Para que ocupen 3 columnas */
+    min-width: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Enlaces dentro de noticias */
+.noticia h3 a {
+    color: #631d0e;
+}
+
+.noticia h3 a:hover {
+    text-decoration: underline;
+=======
+.eventos{
+    background-color: white;
+    margin-right: 750px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+article{
+    margin: 20px;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+>>>>>>> 13e2b31607b75da7797d30551d0395aee409845a
+}
+
+footer {
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    color:white;
+    line-height: 1rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: auto;
+    text-align: right;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Separa izquierda y derecha */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden si el ancho es pequeño */
+}
+
+.footer-left a:hover {
+    text-decoration: underline;
+}
+
+.footer-left{
+<<<<<<< HEAD
+    line-height: 30px;  
+}
+
+.footer-right, .footer-left{
+=======
+    text-align: left;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.footer-right{
+>>>>>>> 13e2b31607b75da7797d30551d0395aee409845a
+    text-align: left;
+    margin-right: 20px;
+}
+
+.icon-bar {
+    position: fixed; /* Fija la barra en la pantalla */
+    bottom: 0; /* La coloca en la parte inferior */
+    left: 0;
+    width: 100%; /* Ocupar todo el ancho */
+    background-color: #555;
+    display: flex;
+    justify-content: center; /* Centra los iconos */
+    padding: 0;
+}
+               
+.icon-bar a {
+    width: 25%;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1.5rem;
+    }
+               
+.icon-bar a:hover {
+    background-color: #000;
+    }
+               
+.active {
+    background-color: #08310c;
+    }
+.facebook{
+    background: #0d5614;
+}
+.insta{
+    background: #14891f;
+}
+.twitter{
+    background: #50a858;
+}
+
+@media screen and (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        text-align: center;
+<<<<<<< HEAD
+=======
+        line-height: normal;
+>>>>>>> 13e2b31607b75da7797d30551d0395aee409845a
+    }
+
+    #nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #nav .logo {
+        margin-right: 0;
+    }
+
+    .portada {
+        height: 50vh;
+        font-size: 1rem;
+    }
+
+    .portada h1 {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+    }
+
+    .galeria .imagenes {
+        justify-content: center;
+    }
+
+    .galeria img {
+        width: 100%; /* Se ajusta al ancho del contenedor */
+        max-width: 150px; /* Limita el tamaño en móviles */
+        height: auto;
+    }
+
+    .eventos {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        margin: 10px 0;
+    }
+}
